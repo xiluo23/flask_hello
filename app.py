@@ -18,10 +18,10 @@ movies = [
 ]
 
 
+
+
 @app.route('/')
 def index():
     return render_template('index.html',name=name,movies=movies)
-
-    return 'Test page'
 if __name__ == '__main__':
     app.run(debug=True)
