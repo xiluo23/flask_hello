@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}",type="text/css">
-    <title>{name}}'s WatchList</title>
+    <title>{user.name}}'s WatchList</title>
 </head>
 <body>
     <h2>
         <img alt="Avatar" class="avatar" src="{{ url_for('static',filename='avatar.png')}}">
-        {{ name }}'s WatchList
+        {{ user.name }}'s WatchList
     </h2>
     <p>{{ movies|length }} Titles</p>
     <ul class="movie-list">
